@@ -1,4 +1,4 @@
-import { getKeyThenIncreaseKey } from 'antd/lib/message';
+//import { getKeyThenIncreaseKey } from 'antd/lib/message';
 import React from 'react';
 import Articles from '../components/Article';
 import axios from 'axios'
@@ -21,16 +21,17 @@ class ArticleList extends React.Component{
         articles:[]
     }
     componentDidMount(){
-        axios.get('http://127.0.0.1:8000/api')
+        axios.get('http://127.0.0.1:8000/api/')
         .then(res => {
             this.setState({
                 articles:res.data
-            })
+            });
+            console.log(res.data);
         })
     }
     render(){
         return(
-            <Articles data={listData}/>
+            <Articles data={this.state.articles}/>
         )
     }
 
