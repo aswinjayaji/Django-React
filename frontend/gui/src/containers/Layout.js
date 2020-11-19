@@ -25,7 +25,7 @@ const CustomLayout = (props) => {
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        AS Design ©2020 Created by Aswin Jayaji
+        AJ Design ©2020 Created by Aswin Jayaji
       </Footer>
     </Layout>
   );
