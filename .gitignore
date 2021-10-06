@@ -1,0 +1,4 @@
+backend/djreact/articles/__pycache__
+backend/djreact/articles/api/__pycache__
+backend/djreact/articles/migrations/__pycache__
+backend/djreact/djreact/__pycache__
